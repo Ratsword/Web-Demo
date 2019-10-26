@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body {
+  background: #d8ffce;
+}
+.separator {
+  border-width: 1px 0;
+  border-style: solid;
+  width: 100%;
+  color: #c2c2c2;
+}
+.btn {
+  padding: 5px 10px;
+  color: #fff;
+  font: 16px "微软雅黑", "宋体";
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-close {
+  border: 1px solid #337ab7;
+  background-color: #337ab7;
+}
+.btn-close:hover {
+  background-color: #265e8f;
+}
+.btn-save {
+  border: 1px solid #5db75d;
+  background-color: #5db75d;
+}
+.btn-save:hover {
+  background-color: #038503;
+}
+.closed {
+  display: none;
+}
+.model {
+  /* 背景固定 */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+.model .model-dialog {
+  width: 420px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 6px;
+}
+.model .model-dialog .model-header {
+  height: 48px;
+  padding: 0 10px;
+  font: 26px/50px Arial, "Microsoft YaHei", "SimSun";
+}
+.model .model-dialog .model-header .close {
+  float: right;
+}
+.model .model-dialog .model-header .close:hover {
+  cursor: pointer;
+  color: #f00;
+}
+.model .model-dialog .model-header .title {
+  float: left;
+  font-weight: bold;
+}
+.model .model-dialog .model-body {
+  padding: 10px;
+  padding-left: 20px;
+}
+.model .model-dialog .model-footer {
+  padding: 10px;
+  text-align: right;
+}
+.model .model-dialog .model-footer button:first-child {
+  margin-right: 10px;
+}
+.control {
+  margin: 10px auto auto 10px;
+}
+.control button {
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+}
+/* TODO:
+总结：
+1.html, body, model都不加overflow
+    只有body可以滑动，模态框不能滑动，即默认htmk,body是可以滚动，model不能滚动
+2.都设置overflow为auto
+    只有一个滚动条，模态框可以滚动，body部分不滑动
+*/

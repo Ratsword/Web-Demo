@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-模态框</title>
+    <link rel="stylesheet" href="../css/01.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/01.js"></script>
+</head>
+<body>
+    <!-- 模态框 -->
+    <div class="model closed"><!-- 背景框 -->
+        <div class="model-dialog"><!-- 内容框 -->
+            <div class="model-header">
+                <span class="close">&times;</span>
+                <span class="title">登录</span>
+            </div>
+            <div class="separator"></div>
+            <div class="model-body">
+                表单内容
+                <p>
+                    测试滚动条
+                </p>
+            </div>
+            <div class="separator"></div>
+            <div class="model-footer">
+                <button type="button" class="btn btn-close">关闭</button>
+                <button type="button" class="btn btn-save">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 控制区域 -->
+    <div class="control">
+        <button>点我一下</button>
+    </div>
+    <div>
+        <p>
+            测试滚动条
+        </p>
+    </div>
+</body>
+</html>
