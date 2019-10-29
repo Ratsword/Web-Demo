@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/24px arial;
+}
+.description {
+  width: 100%;
+  text-align: center;
+}
+.separate {
+  margin: 5px 0;
+  height: 1px;
+  background-color: #e9e9e9;
+}
+.context-menu .list {
+  list-style-type: none;
+  width: 150px;
+  border: 1px solid #dde0e4;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #ccc;
+  background-color: #fff;
+  color: #5b667b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.context-menu .list li {
+  padding: 0 20px 0 26px;
+  position: relative;
+}
+.context-menu .list li:hover {
+  cursor: pointer;
+  background-color: #2a2ad1;
+  color: #fff;
+}
+.context-menu .list li em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../img/02/ico.png") no-repeat;
+}
+.context-menu .list li em.cut {
+  background-position: 0 0;
+}
+.context-menu .list li em.copy {
+  background-position: 0 -24px;
+}
+.context-menu .list li em.paste {
+  background-position: 0 -48px;
+}
